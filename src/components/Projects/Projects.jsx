@@ -4,7 +4,7 @@ import { Parallax, Pagination, Navigation } from "swiper";
 import "./Projects.css"
 import pf2 from "../../Imagenes/pf2.png"
 import pokemon from "../../Imagenes/Pokemon.png"
-import linki from "../../Imagenes/links.png"
+import linki from "../../Imagenes/logo.png"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -35,7 +35,7 @@ export const Projects = () => {
           <img className="imgScreen" src={pf2} alt="coinp" />
           <div className="contTex">  
           <div className="title" data-swiper-parallax="-300">
-            Coin+
+            Gamer-commerce+
             <a href="https://gamer-commerce.vercel.app/" target="_blank" rel="noreferrer">
             <img className="imglink" src={linki} alt="linki" />
             </a>

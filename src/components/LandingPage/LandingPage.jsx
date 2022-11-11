@@ -6,6 +6,7 @@ import { Intro } from '../Intro/Intro'
 import { AboutMe } from '../AboutMe/AboutMe'
 import { Projects } from '../Projects/Projects'
 import { useRef } from 'react'
+import { Loader } from '../Loader/Loader'
 
 export const LandingPage = () => {
 
@@ -23,6 +24,7 @@ export const LandingPage = () => {
 
   return (
     <div className="mainCont">
+      {loader? <Loader/>:
        <div className="backcont">
        <Navbar className="fixed-top" refAbout={aboutMe} refProj={projects}/>
        <div><Intro/></div>
@@ -30,6 +32,7 @@ export const LandingPage = () => {
        <div ref={projects}><Projects/></div> 
        <Footer/>
        </div>
+       }   
     </div>
   )
 }

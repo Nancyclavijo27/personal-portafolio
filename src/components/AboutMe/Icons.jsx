@@ -10,7 +10,7 @@ import isql from "../../Imagenes/sql.jpg"
 import imailer from "../../Imagenes/mailer.jpg"
 import "./AboutMe.css"
 
-let icons = [icss3,ihtml,ijs,inod,irex,inp,islak,isql,imailer]
+let icons = [icss3,ijs,inod,irex,inp,islak,isql,imailer,ihtml]
 
 export const Icons = () => {
   return (
