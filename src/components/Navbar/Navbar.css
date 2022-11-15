@@ -28,7 +28,7 @@
     border: 3px;
     border-style: solid;
     border-radius: 8%;
-    border-color: rgba(240, 248, 255, 0.146);
+    border-color: rgba(240, 36, 36, 0.146);
     margin: 20px;
     padding: 5px;
     cursor: pointer;
@@ -36,7 +36,7 @@
 }
 .but span {
 	transition: all 0.3s;
-    color:rgba(169, 169, 169, 0.474);
+    color:rgba(23, 22, 22, 0.474);
 }
  .but::before {
 	content: '';
