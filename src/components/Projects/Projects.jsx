@@ -5,6 +5,7 @@ import "./Projects.css"
 import pf2 from "../../Imagenes/pf2.png"
 import pokemon from "../../Imagenes/Pokemon.png"
 import linki from "../../Imagenes/logo.png"
+import rick from "../../Imagenes/rick.png"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -72,6 +73,28 @@ export const Projects = () => {
             filtrados, ordenamientos y creación
             Desarrollar la app usando para el Front React, Redux, CSS puro y Back
             desarrollado en Node.js con Express. Base de datos en PostgreSQL y
+            Sequelize.
+            </p>
+          </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img className="imgScreen" src={rick} alt="trave" />
+          <div className="contTex">  
+          <div className="title" data-swiper-parallax="-300">
+          Popkemons  App
+            <a href="https://https-github-com-nancyclavijo27-ricky-and-morty.vercel.app/" target="_blank" rel="noreferrer">
+            <img className="imglink" src={linki} alt="linki" />
+            </a>
+          </div>
+          
+          <div className="text" data-swiper-parallax="-100">
+            <p>
+            Diseñar y desarrollar una App de Ricky and Morty que pagina y numera todas las vistas, que incluía: búsquedas,
+            filtrados, ordenamientos y creación
+            Desarrollar la app usando para el Front React, Redux, Bootstrap y Última versión de react,
+            React hooks, Log in and Log out, State Manager. Base de datos en PostgreSQL y
             Sequelize.
             </p>
           </div>
