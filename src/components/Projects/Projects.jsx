@@ -6,7 +6,7 @@ import pf2 from "../../Imagenes/pf2.png"
 import pokemon from "../../Imagenes/Pokemon.png"
 import linki from "../../Imagenes/logo.png"
 import rick from "../../Imagenes/rick.png"
-
+import enlazar from "../../Imagenes/enlazar.webp"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -57,6 +57,29 @@ export const Projects = () => {
           </div>
         </SwiperSlide>
 
+         <SwiperSlide>
+          <img className="imgScreen" src={enlazar} alt="enlazar" />
+          <div className="contTex">  
+          <div className="title" data-swiper-parallax="-300">
+            Enlazar+
+            <a href="https://consultoraenlazar-git-dev-micacblls.vercel.app/" target="_blank" rel="noreferrer">
+            <img className="imglink" src={linki} alt="linki" />
+            </a>
+          </div>
+          
+          <div className="text" data-swiper-parallax="-100">
+            <p>
+            	Actualización de página web, modificando distintas secciones y migrando a mejores tecnologías para que el proyecto sea más escalables en el tiempo.
+              Diseño de Frontend e interfaz.
+              Desarrollo de Back-end.
+              
+            🚀 Tecnologías: HTML | CSS | NEXT.JS | Javascript | React | Sanity | Tailwind CSS | NodeJS |
+                DataBase | SCRUM
+            </p>
+          </div>
+          </div>
+        </SwiperSlide>
+
         <SwiperSlide>
           <img className="imgScreen" src={pokemon} alt="travel" />
           <div className="contTex">  
@@ -95,7 +118,9 @@ export const Projects = () => {
             filtrados, ordenamientos y creación
             Desarrollar la app usando para el Front React, Redux, Bootstrap y Última versión de react,
             React hooks, Log in and Log out, State Manager. Base de datos en PostgreSQL y
-            Sequelize.
+            Sequelize.  🚀 Tecnologías: HTML | CSS | SASS | Javascript | React | Redux | Bootstrap | NodeJS |
+            Express | Sequelize | PostgreSQL | JSON Web Token | Cloudinary | Nodemailer |
+            Stripe API | SCRUM
             </p>
           </div>
           </div>
