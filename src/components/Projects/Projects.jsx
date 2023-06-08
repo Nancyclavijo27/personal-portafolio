@@ -8,6 +8,8 @@ import linki from "../../Imagenes/logo.png"
 import rick from "../../Imagenes/rick.png"
 import enlazar from "../../Imagenes/enlazar.webp"
 import Detail from "../../Imagenes/Detail.png"
+import Micro from "../../Imagenes/Micro.png"
+import Donar from "../../Imagenes/Home.png"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -33,6 +35,48 @@ export const Projects = () => {
           data-swiper-parallax="-23%"
         ></div>
 
+<SwiperSlide>
+          <img className="imgScreen" src={Micro} alt="coinp" />
+          <div className="contTex">  
+          <div className="title" data-swiper-parallax="-300">
+          start_wars_api_microservices+
+            <a href="http://34.125.129.109:8000/charact" target="_blank" rel="noreferrer">
+            <img className="imglink" src={linki} alt="linki" />
+            </a>
+          </div>
+          
+          <div className="text" data-swiper-parallax="-100">
+            <p>
+            Proyecto de microservicios backend con Docker y MongoDB
+
+            Es un proyecto donde utilizamos Docker y una máquina virtual  google cloud  de despliegue para crear un entorno de desarrollo y producción escalable y seguro para nuestros microservicios.
+
+            Utilizamos MongoDB como nuestra base de datos backend y construimos cada microservicio para que fuera independiente y escalable.
+
+            Si estás interesado en saber más sobre este emocionante proyecto o ver cómo funciona, por favor visita el siguiente enlace: https://github.com/Nancyclavijo27/microservices.
+            </p>
+          </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img className="imgScreen" src={Donar} alt="coinp" />
+          <div className="contTex">  
+          <div className="title" data-swiper-parallax="-300">
+          Donare+
+            <a href="https://s8-20-m-react.vercel.app/" target="_blank" rel="noreferrer">
+            <img className="imglink" src={linki} alt="linki" />
+            </a>
+          </div>
+          
+          <div className="text" data-swiper-parallax="-100">
+            <p>
+            Junto con otros 4 desarrolladores construimos  esta página que permite a sus usuarios una plataforma para realizar donaciones de bienes tales como juguetes, indumentaria o incluso alimentos no perecederos de manera sencilla. El usuario solo tiene que registrarse para poder solicitar una donación y contactarse con el donante.  Tecnologias utilizadas | NodeJS | MongoDB | Typescript | TailwindCSS
+            </p>
+          </div>
+          </div>
+        </SwiperSlide>
+
         <SwiperSlide>
           <img className="imgScreen" src={Detail} alt="coinp" />
           <div className="contTex">  
@@ -45,7 +89,7 @@ export const Projects = () => {
           
           <div className="text" data-swiper-parallax="-100">
             <p>
-            Bypass es una página web de venta de entradas digitales que permite a los usuarios adquirir boletos para diversos eventos de manera segura y cómoda. La plataforma cuenta con un sistema de pago seguro y una interfaz intuitiva que facilita la compra de entradas para conciertos, festivales, eventos deportivos y culturales, entre otros. En resumen, Bypass es una plataforma que permite a los usuarios adquirir entradas digitales de manera rápida y sencilla para una gran variedad de eventos.
+            Junto con otros 6  desarrolladores construimos Bypass  que es una página web de venta de entradas digitales que permite a los usuarios adquirir boletos para diversos eventos de manera segura y cómoda. La plataforma cuenta con un sistema de pago seguro y una interfaz intuitiva que facilita la compra de entradas para conciertos, festivales, eventos deportivos y culturales, entre otros. En resumen, Bypass es una plataforma que permite a los usuarios adquirir entradas digitales de manera rápida y sencilla para una gran variedad de eventos.
             🚀 Tecnologías: HTML | CSS | FireBase | Javascript |  Bootstrap | NodeJS |
             Express | React Redux Toolkit | PostgreSQL | JSON Web Token |  SCRUM |
             </p>
