@@ -10,6 +10,8 @@ import enlazar from "../../Imagenes/enlazar.webp"
 import Detail from "../../Imagenes/Detail.png"
 import Micro from "../../Imagenes/Micro.png"
 import Donar from "../../Imagenes/Home.png"
+import pelicula from "../../Imagenes/peliculas.jpg"
+import versus from "../../Imagenes/versus.webp"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -35,7 +37,7 @@ export const Projects = () => {
           data-swiper-parallax="-23%"
         ></div>
 
-<SwiperSlide>
+    <SwiperSlide>
           <img className="imgScreen" src={Micro} alt="coinp" />
           <div className="contTex">  
           <div className="title" data-swiper-parallax="-300">
@@ -60,18 +62,18 @@ export const Projects = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className="imgScreen" src={Donar} alt="coinp" />
+          <img className="imgScreen" src={pelicula} alt="coinp" />
           <div className="contTex">  
           <div className="title" data-swiper-parallax="-300">
-          Donare+
-            <a href="https://s8-20-m-react.vercel.app/" target="_blank" rel="noreferrer">
+          Peliculas+
+            <a href="https://peliculas-livid.vercel.app/" target="_blank" rel="noreferrer">
             <img className="imglink" src={linki} alt="linki" />
             </a>
           </div>
           
           <div className="text" data-swiper-parallax="-100">
             <p>
-            Junto con otros 4 desarrolladores construimos  esta página que permite a sus usuarios una plataforma para realizar donaciones de bienes tales como juguetes, indumentaria o incluso alimentos no perecederos de manera sencilla. El usuario solo tiene que registrarse para poder solicitar una donación y contactarse con el donante.  Tecnologias utilizadas | NodeJS | MongoDB | Typescript | TailwindCSS
+            Diseñar y desarrollar una aplicación de películas que incluya búsquedas, visualización y votación por cada película. Para el front-end, usar React, Redux y CSS puro. No se necesita back-end, sino hacer diferentes llamados a la API de películas. Las tecnologías utilizadas son HTML, CSS, Javascript, React, Redux y NodeJS. 
             </p>
           </div>
           </div>
@@ -187,6 +189,40 @@ export const Projects = () => {
             🚀 Tecnologías: HTML | CSS | SASS | Javascript | React | Redux | Bootstrap | NodeJS |
             Express | Sequelize | PostgreSQL | JSON Web Token | Cloudinary | Nodemailer |
             Stripe API | SCRUM
+            </p>
+          </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img className="imgScreen" src={versus} alt="coinp" />
+          <div className="contTex">  
+          <div className="title" data-swiper-parallax="-300">
+          Versus+
+            <a href="https://versus-three.vercel.app/" target="_blank" rel="noreferrer">
+            <img className="imglink" src={linki} alt="linki" />
+            </a>
+          </div>
+          <div className="text" data-swiper-parallax="-100">
+            <p>
+            La Star Wars App es una aplicación de desarrollo que cuenta con un componente Home que incluye un NavBar, un Cards y un List. El componente Cards está dividido en dos y contiene el componente Card, que es un slide que muestra y oculta una card con al menos 6 atributos del character, como su imagen, nombre e id. Además, el componente List se encuentra por debajo del componente Cards.
+            </p>
+          </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img className="imgScreen" src={Donar} alt="coinp" />
+          <div className="contTex">  
+          <div className="title" data-swiper-parallax="-300">
+          Donare+
+            <a href="https://s8-20-m-react.vercel.app/" target="_blank" rel="noreferrer">
+            <img className="imglink" src={linki} alt="linki" />
+            </a>
+          </div>
+          <div className="text" data-swiper-parallax="-100">
+            <p>
+            Junto con otros 4 desarrolladores construimos  esta página que permite a sus usuarios una plataforma para realizar donaciones de bienes tales como juguetes, indumentaria o incluso alimentos no perecederos de manera sencilla. El usuario solo tiene que registrarse para poder solicitar una donación y contactarse con el donante.  Tecnologias utilizadas | NodeJS | MongoDB | Typescript | TailwindCSS
             </p>
           </div>
           </div>
