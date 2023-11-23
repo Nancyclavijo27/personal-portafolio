@@ -104,7 +104,7 @@ export const Projects = () => {
           <div className="contTex">  
           <div className="title" data-swiper-parallax="-300">
             Enlazar+
-            <a href="https://consultoraenlazar-git-dev-micacblls.vercel.app/" target="_blank" rel="noreferrer">
+            <a href="https://www.consultoraenlazar.xyz/" target="_blank" rel="noreferrer">
             <img className="imglink" src={linki} alt="linki" />
             </a>
           </div>
