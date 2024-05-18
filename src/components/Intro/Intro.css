@@ -7,6 +7,13 @@
     border-radius: 1em;
 }
 
+.imgIntro {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    border-radius: 1em; /* Asegura que los bordes de la imagen sean redondeados */
+}
+
+
 .imgIntro:hover {
     scale: 101%;
     box-shadow: 5em;

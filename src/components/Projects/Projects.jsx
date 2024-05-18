@@ -42,7 +42,7 @@ export const Projects = () => {
           <div className="contTex">  
           <div className="title" data-swiper-parallax="-300">
           start_wars_api_microservices+
-            <a href="http://34.125.129.109:8000/charact" target="_blank" rel="noreferrer">
+            <a href="https://github.com/Nancyclavijo27/microservices" target="_blank" rel="noreferrer">
             <img className="imglink" src={linki} alt="linki" />
             </a>
           </div>
