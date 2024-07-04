@@ -1,173 +1,130 @@
-.bar{
-	height: 6em;
+.bar {
+    height: 6em;
     background-color: rgba(0, 0, 0, 0.45);
-	display: flex;
-    align-content: center;
-	padding: 8px;
-	width: 100%;
+    display: flex;
+    align-items: center; /* Ajuste: align-items en lugar de align-content */
+    padding: 8px;
+    width: 100%;
 }
 
-.contimgLogo{
-	display: inline;
-	width: 50%;
-	padding-left: 30px;
+.contimgLogo {
+    display: inline;
+    width: 50%;
+    padding-left: 30px;
 }
 
-.imgLogo{
-	width: 105px;
-	margin-top: 9px;
+.imgLogo {
+    width: 105px;
+    margin-top: 9px;
 }
 
-.botonera{
-	width: 50%;
-	display: flex;
-	justify-content: flex-end;
-	padding-right: 20px;
+.botonera {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 
-.but{
-    border: 3px;
-    border-style: solid;
+.but {
+    border: 3px solid transparent; /* Ajuste: border en lugar de border-style */
     border-radius: 8%;
-    border-color: rgba(240, 36, 36, 0.146);
     margin: 20px;
-    padding: 5px;
+    padding: 5px 15px; /* Ajuste: Aumenta el espacio interior */
     cursor: pointer;
-	background-color: transparent;
+    background-color: rgb(3, 100, 119); /* Fondo transparente */
+    color: rgba(255, 255, 255, 0.9); /* Texto blanco */
+    transition: background-color 0.3s, color 0.3s; /* Transición para el color de fondo y texto */
 }
+
 .but span {
-	transition: all 0.3s;
-    color:rgba(23, 22, 22, 0.474);
+    transition: all 0.3s;
 }
- .but::before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border-top-width: 1px;
-	border-bottom-width: 1px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-top-color: rgba(255,255,255,0.5);
-	border-bottom-color: rgba(255,255,255,0.5);
-	transform: scale(0.1, 1);
-} 
- 
+
+.but:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambia el color de fondo en hover */
+    color: rgba(255, 255, 255, 0.95); /* Cambia el color del texto en hover */
+}
+
 .but:hover span {
-	letter-spacing: 2px;
-    color:rgba(169, 169, 169, 0.738);
-	filter: brightness(150%);
-} 
-
-.but:hover::before {
-	opacity: 1;	
-	transform: scale(1, 1);	
+    letter-spacing: 2px;
 }
-
-.but:hover::after {
-	opacity: 0;	
-	transform: scale(0.1, 1);
-}
-
 
 @media (max-width: 415px) {
-    .bar{
-		height: 4.5em;
-		background-color: rgba(0, 0, 0, 0.45);
-		display: flex;
-		align-content: center;
-		padding: 5px;
-		width: 100%;
-	}
-	
-	.contimgLogo{
-		display: inline;
-		width: 50%;
-		padding-left: 20px;
-	}
+    .bar {
+        height: 4.5em;
+        background-color: rgba(0, 0, 0, 0.45);
+        display: flex;
+        align-items: center; /* Ajuste: align-items en lugar de align-content */
+        padding: 5px;
+        width: 100%;
+    }
 
-	.imgLogo{
-		width: 85px;
-		margin-top: 5px;
-	}
-	
-	.botonera{
-		width: 50%;
-		display: flex;
-		justify-content: flex-end;
-		padding-right: 10px;
-	}
-	
-	.but{
-		border: 2px;
-		border-style: solid;
-		border-radius: 5%;
-		border-color: rgba(240, 248, 255, 0.146);
-		margin: 6px;
-		padding: -1px 3px 2px 3px;
-		cursor: pointer;
-		background-color: transparent;
-		height: 40px;
-	}
-	.but span {
-		transition: all 0.3s;
-		color:rgba(169, 169, 169, 0.474);
-		font-size: medium;
-	}
-	 
-		
+    .contimgLogo {
+        display: inline;
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    .imgLogo {
+        width: 85px;
+        margin-top: 5px;
+    }
+
+    .botonera {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+    .but {
+        border: 2px solid transparent; /* Ajuste: border en lugar de border-style */
+        border-radius: 5%;
+        margin: 6px;
+        padding: 5px 10px; /* Ajuste: Aumenta el espacio interior */
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.45); /* Fondo transparente */
+        color: rgba(255, 255, 255, 0.9); /* Texto blanco */
+        height: 40px; /* Ajuste: Altura para dispositivos pequeños */
+    }
 }
 
-
 @media (max-width: 320px) {
-    .bar{
-		height: 4.5em;
-		background-color: rgba(0, 0, 0, 0.45);
-		display: flex;
-		align-content: center;
-		padding: 5px;
-		width: 100%;
-	}
-	
-	.contimgLogo{
-		display: inline;
-		width: 50%;
-		padding-left: 20px;
-	}
+    .bar {
+        height: 4.5em;
+        background-color: rgba(0, 0, 0, 0.45);
+        display: flex;
+        align-items: center; /* Ajuste: align-items en lugar de align-content */
+        padding: 5px;
+        width: 100%;
+    }
 
-	.imgLogo{
-		width: 80px;
-		margin-top: 5px;
-	}
-	
-	.botonera{
-		width: 50%;
-		display: flex;
-		justify-content: flex-end;
-		padding-right: 0px;
-	}
-	
-	.but{
-		border: 2px;
-		border-style: solid;
-		border-radius: 5%;
-		border-color: rgba(240, 248, 255, 0.146);
-		margin: 6px;
-		padding: -1px 3px 2px 3px;
-		cursor: pointer;
-		background-color: transparent;
-		height: 40px;
-	}
-	.but span {
-		transition: all 0.3s;
-		color:rgba(169, 169, 169, 0.474);
-		font-size: medium;
-	}
-	 
-		
+    .contimgLogo {
+        display: inline;
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    .imgLogo {
+        width: 80px;
+        margin-top: 5px;
+    }
+
+    .botonera {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0px; /* Ajuste: Sin padding derecho en dispositivos muy pequeños */
+    }
+
+    .but {
+        border: 2px solid transparent; /* Ajuste: border en lugar de border-style */
+        border-radius: 5%;
+        margin: 6px;
+        padding: 5px 10px; /* Ajuste: Aumenta el espacio interior */
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.45); /* Fondo transparente */
+        color: rgba(255, 255, 255, 0.9); /* Texto blanco */
+        height: 40px; /* Ajuste: Altura para dispositivos muy pequeños */
+    }
 }

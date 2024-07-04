@@ -1,0 +1,264 @@
+/* Estilos para la sección del blog */
+#blog {
+  background-color:rgba(3, 40, 44, 0.726);
+    margin: 3%;
+    padding: 2%;
+    display: block;
+    justify-content: center;
+    box-shadow: 5em;
+    border-radius: 1em;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 6%; /* Margen inferior similar a contabt */
+}
+
+.section-title h2 {
+  font-size: xx-large; /* Tamaño de fuente similar a tit */
+  font-weight: bold; /* Peso de fuente similar a tit */
+  color: azure; /* Color de texto similar a tit */
+}
+
+.section-title p {
+  font-size: large; /* Tamaño de fuente similar a par */
+  color: rgba(240, 255, 255, 0.807); /* Color de texto similar a par */
+  margin-top: 2%; /* Margen superior similar a par */
+}
+
+.row {
+  margin-top: 3%; /* Margen superior similar a conRow */
+}
+
+.blog-item {
+  
+  padding: 2%; /* Relleno similar a contabt */
+  box-shadow: 5em; /* Sombra similar a contabt */
+  border-radius: 1em; /* Radio de borde similar a contabt */
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+  box-shadow: 7em; /* Sombra al hacer hover similar a contabt */
+}
+
+.blog-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-content h3 {
+  font-size: large; /* Tamaño de fuente similar a tit */
+  font-weight: bold; /* Peso de fuente similar a tit */
+  margin-top: 2%; /* Margen superior similar a tit */
+}
+
+.blog-content p {
+  font-size: medium; /* Tamaño de fuente similar a par */
+  color: #fff; /* Color de texto similar a par */
+  margin-top: 1%; /* Margen superior similar a par */
+}
+
+.blog-logo {
+  text-align: center;
+  margin-top: 4%; /* Margen superior similar a conRow */
+}
+
+.blog-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.blog-image {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+  display: block;
+  margin-bottom: 1%; /* Margen inferior similar a fot */
+}
+
+.wordpress-logo {
+  max-width: 50px; /* Ajusta el tamaño del logo de WordPress según tu preferencia */
+  display: block;
+  margin: 0 auto;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 6%; /* Margen inferior similar a contabt */
+  }
+
+  .row {
+    margin-top: 3%; /* Margen superior similar a conRow */
+  }
+
+  .blog-item {
+    background-color: #ffffff; /* Color de fondo similar a contabt */
+    padding: 2%; /* Relleno similar a contabt */
+    box-shadow: 5em; /* Sombra similar a contabt */
+    border-radius: 1em; /* Radio de borde similar a contabt */
+  }
+
+  .blog-item img {
+    border-radius: 8px;
+  }
+
+  .blog-content h3 {
+    font-size: large; /* Tamaño de fuente similar a tit */
+    font-weight: bold; /* Peso de fuente similar a tit */
+    margin-top: 2%; /* Margen superior similar a tit */
+  }
+
+  .blog-content p {
+    font-size: small; /* Tamaño de fuente similar a par */
+    color: #555555; /* Color de texto similar a par */
+    margin-top: 1%; /* Margen superior similar a par */
+  }
+
+  .blog-logo {
+    text-align: center;
+    margin-top: 4%; /* Margen superior similar a conRow */
+  }
+
+  .blog-logo img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .blog-image {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+    display: block;
+    margin-bottom: 1%; /* Margen inferior similar a fot */
+  }
+
+  .wordpress-logo {
+    max-width: 50px; /* Ajusta el tamaño del logo de WordPress según tu preferencia */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .blog-content a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 415px) {
+  .section-title {
+    margin-bottom: 6%; /* Margen inferior similar a contabt */
+  }
+
+  .row {
+    margin-top: 3%; /* Margen superior similar a conRow */
+  }
+
+  .blog-item {
+    background-color: #ffffff; /* Color de fondo similar a contabt */
+    padding: 2%; /* Relleno similar a contabt */
+    box-shadow: 5em; /* Sombra similar a contabt */
+    border-radius: 1em; /* Radio de borde similar a contabt */
+  }
+
+  .blog-item img {
+    border-radius: 8px;
+  }
+
+  .blog-content h3 {
+    font-size: large; /* Tamaño de fuente similar a tit */
+    font-weight: bold; /* Peso de fuente similar a tit */
+    margin-top: 2%; /* Margen superior similar a tit */
+  }
+
+  .blog-content p {
+    font-size: small; /* Tamaño de fuente similar a par */
+    color: #555555; /* Color de texto similar a par */
+    margin-top: 1%; /* Margen superior similar a par */
+  }
+
+  .blog-logo {
+    text-align: center;
+    margin-top: 4%; /* Margen superior similar a conRow */
+  }
+
+  .blog-logo img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .blog-image {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+    display: block;
+    margin-bottom: 1%; /* Margen inferior similar a fot */
+  }
+
+  .wordpress-logo {
+    max-width: 50px; /* Ajusta el tamaño del logo de WordPress según tu preferencia */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .blog-content a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 320px), (orientation: portrait) {
+  .section-title {
+    margin-bottom: 6%; /* Margen inferior similar a contabt */
+  }
+
+  .row {
+    margin-top: 3%; /* Margen superior similar a conRow */
+  }
+
+  .blog-item {
+    background-color: #ffffff; /* Color de fondo similar a contabt */
+    padding: 2%; /* Relleno similar a contabt */
+    box-shadow: 5em; /* Sombra similar a contabt */
+    border-radius: 1em; /* Radio de borde similar a contabt */
+  }
+
+  .blog-item img {
+    border-radius: 8px;
+  }
+
+  .blog-content h3 {
+    font-size: large; /* Tamaño de fuente similar a tit */
+    font-weight: bold; /* Peso de fuente similar a tit */
+    margin-top: 2%; /* Margen superior similar a tit */
+  }
+
+  .blog-content p {
+    font-size: small; /* Tamaño de fuente similar a par */
+    color: #555555; /* Color de texto similar a par */
+    margin-top: 1%; /* Margen superior similar a par */
+  }
+
+  .blog-logo {
+    text-align: center;
+    margin-top: 4%; /* Margen superior similar a conRow */
+  }
+
+  .blog-logo img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .blog-image {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+    display: block;
+    margin-bottom: 1%; /* Margen inferior similar a fot */
+  }
+
+  .wordpress-logo {
+    max-width: 50px; /* Ajusta el tamaño del logo de WordPress según tu preferencia */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .blog-content a:hover {
+    text-decoration: underline;
+  }
+}
