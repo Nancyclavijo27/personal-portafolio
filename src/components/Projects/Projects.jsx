@@ -2,7 +2,6 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Parallax, Pagination, Navigation } from "swiper";
 import "./Projects.css"
-import pf2 from "../../Imagenes/pf2.png"
 import pokemon from "../../Imagenes/Pokemon.png"
 import linki from "../../Imagenes/logo.png"
 import rick from "../../Imagenes/rick.png"
@@ -12,6 +11,7 @@ import Micro from "../../Imagenes/Micro.png"
 import Donar from "../../Imagenes/Home.png"
 import pelicula from "../../Imagenes/peliculas.jpg"
 import versus from "../../Imagenes/versus.webp"
+import geoapp from "../../Imagenes/geoapp.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -36,6 +36,64 @@ export const Projects = () => {
           className="parallax-bg"
           data-swiper-parallax="-23%"
         ></div>
+
+        <SwiperSlide>
+  <img className="imgScreen" src={geoapp} alt="GeoApp Nancy" />
+  <div className="contTex">  
+    <div className="title" data-swiper-parallax="-300">
+      GeoApp Nancy (Fullstack + WebSockets)
+    </div>
+    
+    <div className="text" data-swiper-parallax="-100">
+      <p>
+        Aplicación Fullstack con seguimiento en tiempo real usando Socket.IO.
+        Backend desplegado en Render y base de datos PostgreSQL en Supabase.
+
+        🔹 Autenticación con JWT  
+        🔹 WebSockets en tiempo real  
+        🔹 Node.js + Express  
+        🔹 React + Leaflet  
+        🔹 PostgreSQL  
+
+        Proyecto diseñado para monitoreo y gestión de rutas en tiempo real.
+      </p>
+
+      <div style={{ marginTop: "15px" }}>
+        <a 
+          href="https://geoapp-nancy-frontend.onrender.com" 
+          target="_blank" 
+          rel="noreferrer"
+          style={{
+            marginRight: "10px",
+            padding: "8px 15px",
+            backgroundColor: "#2e6f68",
+            color: "white",
+            borderRadius: "8px",
+            textDecoration: "none"
+          }}
+        >
+          Ver App
+        </a>
+
+        <a 
+          href="https://github.com/Nancyclavijo27/geoapp-nancy" 
+          target="_blank" 
+          rel="noreferrer"
+          style={{
+            padding: "8px 15px",
+            backgroundColor: "#1f2937",
+            color: "white",
+            borderRadius: "8px",
+            textDecoration: "none"
+          }}
+        >
+          Ver Código
+        </a>
+      </div>
+
+    </div>
+  </div>
+</SwiperSlide>
 
     <SwiperSlide>
           <img className="imgScreen" src={Micro} alt="coinp" />
@@ -164,31 +222,6 @@ export const Projects = () => {
             Desarrollar la app usando para el Front React, Redux, CSS puro y Back
             desarrollado en Node.js con Express. Base de datos en PostgreSQL y
             Sequelize.
-            </p>
-          </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img className="imgScreen" src={pf2} alt="coinp" />
-          <div className="contTex">  
-          <div className="title" data-swiper-parallax="-300">
-            Gamer-commerce+
-            <a href="https://gamer-commerce.vercel.app/" target="_blank" rel="noreferrer">
-            <img className="imglink" src={linki} alt="linki" />
-            </a>
-          </div>
-          
-          <div className="text" data-swiper-parallax="-100">
-            <p>
-            Proyecto final desarrollado como parte del bootcamp de SoyHenry junto con
-            con otras seis personas. 
-            Es una aplicación web que ofrece venta de juegos en formato digital, ésta idea
-            viene de facilitarle al usuario la compra de juegos sin necesidad de moverse de
-            su casa y ademas de comprarlo en formato fisico, que es incluso, mas caro.
-            🚀 Tecnologías: HTML | CSS | SASS | Javascript | React | Redux | Bootstrap | NodeJS |
-            Express | Sequelize | PostgreSQL | JSON Web Token | Cloudinary | Nodemailer |
-            Stripe API | SCRUM
             </p>
           </div>
           </div>
