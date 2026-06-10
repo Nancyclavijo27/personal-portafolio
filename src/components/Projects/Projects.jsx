@@ -90,7 +90,15 @@ export const Projects = () => {
           Ver Código
         </a>
       </div>
-
+<p
+  style={{
+    marginTop: "12px",
+    fontSize: "0.85rem",
+    color: "#d1d5db"
+  }}
+>
+  ⚠️ La demo utiliza servicios gratuitos y puede requerir algunos segundos para iniciar o presentar indisponibilidad temporal.
+</p>
     </div>
   </div>
 </SwiperSlide>
