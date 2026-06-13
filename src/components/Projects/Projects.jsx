@@ -12,6 +12,7 @@ import Donar from "../../Imagenes/Home.png"
 import pelicula from "../../Imagenes/peliculas.jpg"
 import versus from "../../Imagenes/versus.webp"
 import geoapp from "../../Imagenes/geoapp.jpg";
+import libreta from "../../Imagenes/LibretaD.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -38,10 +39,91 @@ export const Projects = () => {
         ></div>
 
         <SwiperSlide>
+  <img className="imgScreen" src={libreta} alt="Libreta Digital Pro" />
+
+  <div className="contTex">
+    <div className="title" data-swiper-parallax="-300">
+      Libreta Digital Pro
+    </div>
+
+    <div className="text" data-swiper-parallax="-100">
+      <p>
+        Aplicación Full Stack desarrollada para la gestión de inventarios,
+        productos y control operativo en pequeños negocios.
+
+        🔹 Gestión de productos
+
+        🔹 Control de inventarios
+
+        🔹 Búsqueda rápida de información
+
+        🔹 Autenticación de usuarios
+
+        🔹 React + Node.js
+
+        🔹 PostgreSQL
+
+        Proyecto orientado a digitalizar procesos operativos y facilitar
+        la administración de información en negocios reales.
+      </p>
+
+      <div style={{ marginTop: "15px" }}>
+        <a
+          href="https://libreta-digital-pro.vercel.app/login"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            marginRight: "10px",
+            padding: "8px 15px",
+            backgroundColor: "#2e6f68",
+            color: "white",
+            borderRadius: "8px",
+            textDecoration: "none"
+          }}
+        >
+          Ver App
+        </a>
+
+        <a
+          href="https://github.com/Nancyclavijo27/libreta-digital-pro"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            padding: "8px 15px",
+            backgroundColor: "#1f2937",
+            color: "white",
+            borderRadius: "8px",
+            textDecoration: "none"
+          }}
+        >
+          Ver Código
+        </a>
+      </div>
+
+      <p
+        style={{
+          marginTop: "12px",
+          fontSize: "0.85rem",
+          color: "#d1d5db"
+        }}
+      >
+        🔑 Usuario de prueba
+
+Usuario: carlos
+Contraseña: 123456
+
+Cuenta creada exclusivamente para demostración del sistema.
+        ⚠️ Demo alojada en servicios gratuitos y puede requerir algunos segundos para iniciar.
+      </p>
+    </div>
+  </div>
+</SwiperSlide>
+
+        <SwiperSlide>
   <img className="imgScreen" src={geoapp} alt="GeoApp Nancy" />
   <div className="contTex">  
     <div className="title" data-swiper-parallax="-300">
-      GeoApp Nancy (Fullstack + WebSockets)
+      GeoApp - Real Time Geolocation Tracking
     </div>
     
     <div className="text" data-swiper-parallax="-100">
