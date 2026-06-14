@@ -1,58 +1,169 @@
-import React from 'react';
+import React, { useState } from "react";
 import "./BlogSection.css";
-import blogImage from "../../Imagenes/paginaw.jpg"; // Asegúrate de que la ruta sea correcta
-import wordpressLogo from "../../Imagenes/bloglogo.jpg"; // Asegúrate de que la ruta sea correcta
-import oneblog from "../../Imagenes/oneblog.jpg"
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import vision from "../../Imagenes/visio.png";
+import servicios from "../../Imagenes/difucion.png";
+import portafolioServicios from "../../Imagenes/portafolio.png";
 
 const BlogSection = () => {
+
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
-    <section id="blog" className="section">
-        <div className="container">
-            <div className="section-title">
-                <h2>Mi Blog</h2>
-                <p>Explora mi blog en WordPress donde comparto mi experiencia y conocimientos en desarrollo web.</p>
-            </div>
-            <div className="row">
-                <div className="col-md-6">
-                    <div className="blog-item">
-                    <a href="https://tech50plus3.wordpress.com/2024/06/30/de-la-industria-al-codigo-mi-historia-de-transformacion-a-los-50/" target="_blank" rel="noreferrer">
-            <img src={oneblog} alt="Imagen del artículo" className="blog-image"/>
-        </a>
-                        <div className="blog-content">
-                        <h3><a href="https://tech50plus3.wordpress.com/2024/06/30/de-la-industria-al-codigo-mi-historia-de-transformacion-a-los-50/" target="_blank" rel="noreferrer" >De la Industria al Código: Mi Historia de Transformación a los 50</a></h3>
-                            <p>En este artículo comparto mi experiencia personal y profesional al cambiar de industria a desarrollo de software a los 50 años.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-6">
-    <div className="blog-item">
-        <a href="https://tech50plus3.wordpress.com/" target="_blank" rel="noreferrer">
-            <img src={blogImage} alt="Imagen del artículo" className="blog-image"/>
-        </a>
-        <div className="blog-content">
-            <div className="row">
-                <div className="col-md-6">
-                    <div className="blog-logo">
-                        <a href="https://tech50plus3.wordpress.com/" target="_blank" rel="noreferrer">
-                            <img src={wordpressLogo} alt="Logo de WordPress" className="wordpress-logo"/>
-                        </a>
-                    </div>
-                </div>
-                <div className="col-md-6">
-                    <h3><a href="https://tech50plus3.wordpress.com/" target="_blank" rel="noreferrer">Nancy's Tech 50 Plus</a></h3>
-                    <p>Explora mi viaje de reinventarme profesionalmente a los 50 años, dejando atrás una carrera en ingeniería industrial para entrar al mundo del desarrollo web. Descubre cómo enfrento desafíos con creatividad y dedicación en el desarrollo de aplicaciones web innovadoras..</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <section id="blog">
 
+      
+
+      <div className="contVisionSection">
+        <div className="section-title">
+        <h2>Mi Visión y Emprendimiento</h2>
+
+        <p>
+          Combino organización, estructura y tecnología para ayudar a
+          pequeños negocios a crecer con orden, claridad y herramientas
+          digitales.
+        </p>
+      </div>
+
+        <Swiper
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+
+          <SwiperSlide>
+
+            <img
+              src={vision}
+              alt="Mi Visión"
+              className="visionImg"
+              onClick={() => setSelectedImage(vision)}
+            />
+
+            <div className="visionText">
+
+              <div className="visionTitle">
+                Mi Ruta de Crecimiento
+              </div>
+
+              <div className="visionDescription">
+
+                <p>
+                  Estoy construyendo un emprendimiento enfocado en
+                  organización, digitalización y mejora de procesos.
+                </p>
+
+                <p>
+                  Mi objetivo es unir mi experiencia en ingeniería
+                  industrial, organización operativa y desarrollo
+                  de software para ayudar a emprendedores y
+                  pequeños negocios a crecer de manera sostenible.
+                </p>
+
+              </div>
 
             </div>
+
+          </SwiperSlide>
+
+          <SwiperSlide>
+
+            <img
+              src={servicios}
+              alt="Servicios"
+              className="visionImg"
+              onClick={() => setSelectedImage(servicios)}
+            />
+
+            <div className="visionText">
+
+              <div className="visionTitle">
+                ¿Cómo puedo ayudarte?
+              </div>
+
+              <div className="visionDescription">
+
+                <p>
+                  Apoyo negocios en inventarios, pedidos,
+                  clientes, digitalización y organización
+                  administrativa.
+                </p>
+
+                <p>
+                  También desarrollo herramientas tecnológicas
+                  para facilitar el trabajo diario y optimizar
+                  procesos.
+                </p>
+
+              </div>
+
+            </div>
+
+          </SwiperSlide>
+
+          <SwiperSlide>
+
+            <img
+              src={portafolioServicios}
+              alt="Portafolio"
+              className="visionImg"
+              onClick={() => setSelectedImage(portafolioServicios)}
+            />
+
+            <div className="visionText">
+
+              <div className="visionTitle">
+                Portafolio de Servicios
+              </div>
+
+              <div className="visionDescription">
+
+                <p>
+                  Organización operativa, apoyo administrativo,
+                  análisis de información y soluciones tecnológicas.
+                </p>
+
+                <p>
+                  Todo enfocado en ayudar a emprendedores a crecer
+                  de forma organizada y sostenible.
+                </p>
+
+              </div>
+
+            </div>
+
+          </SwiperSlide>
+
+        </Swiper>
+
+      </div>
+
+      {selectedImage && (
+
+        <div
+          className="imageModal"
+          onClick={() => setSelectedImage(null)}
+        >
+
+          <img
+            src={selectedImage}
+            alt="Imagen ampliada"
+            className="modalImage"
+          />
+
         </div>
+
+      )}
+
     </section>
   );
-}
+};
 
 export default BlogSection;
-

@@ -28,7 +28,7 @@ export const Navbar = ({ refAbout, refProj, refBlog  }) => {
             <span>Proyectos</span>
           </button>
           <button className="but" onClick={() => scrollToSection(refBlog)}>
-            <span>Blog</span>
+           <span>Emprendimiento</span>
           </button>
         </div>
       </div>

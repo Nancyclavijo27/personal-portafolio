@@ -538,3 +538,50 @@
         text-decoration: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+  .coninf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contlet {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .fot {
+    width: 220px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .par {
+    width: 100%;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .conbotEnl {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .contDes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .btnDes {
+    width: 220px;
+  }
+
+}

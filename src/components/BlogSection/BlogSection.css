@@ -1,264 +1,101 @@
-/* Estilos para la sección del blog */
-#blog {
-  background-color:rgba(3, 40, 44, 0.726);
-    margin: 3%;
-    padding: 2%;
-    display: block;
-    justify-content: center;
-    box-shadow: 5em;
-    border-radius: 1em;
+#blog{
+  margin-top: 60px;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 6%; /* Margen inferior similar a contabt */
+.contVisionSection{
+  background-color: rgba(3, 40, 44, 0.726);
+  margin: 3%;
+  padding: 2%;
+  border-radius: 1em;
 }
 
-.section-title h2 {
-  font-size: xx-large; /* Tamaño de fuente similar a tit */
-  font-weight: bold; /* Peso de fuente similar a tit */
-  color: azure; /* Color de texto similar a tit */
+.swiper-slide{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  padding:40px;
 }
 
-.section-title p {
-  font-size: large; /* Tamaño de fuente similar a par */
-  color: rgba(240, 255, 255, 0.807); /* Color de texto similar a par */
-  margin-top: 2%; /* Margen superior similar a par */
+.visionImg{
+  width:450px;
+  max-height:320px;
+  object-fit:contain;
+  border-radius:15px;
+  cursor:pointer;
+  transition:0.3s;
 }
 
-.row {
-  margin-top: 3%; /* Margen superior similar a conRow */
+.visionImg:hover{
+  transform:scale(1.03);
 }
 
-.blog-item {
-  
-  padding: 2%; /* Relleno similar a contabt */
-  box-shadow: 5em; /* Sombra similar a contabt */
-  border-radius: 1em; /* Radio de borde similar a contabt */
-  transition: box-shadow 0.3s ease;
+.visionText{
+  max-width:500px;
 }
 
-.blog-item:hover {
-  box-shadow: 7em; /* Sombra al hacer hover similar a contabt */
+.visionTitle{
+  color:white;
+  font-size:32px;
+  margin-bottom:20px;
 }
 
-.blog-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.visionDescription{
+  color:rgb(207,207,207);
+  text-align:justify;
+  line-height:1.7;
 }
 
-.blog-content h3 {
-  font-size: large; /* Tamaño de fuente similar a tit */
-  font-weight: bold; /* Peso de fuente similar a tit */
-  margin-top: 2%; /* Margen superior similar a tit */
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
 }
 
-.blog-content p {
-  font-size: medium; /* Tamaño de fuente similar a par */
-  color: #fff; /* Color de texto similar a par */
-  margin-top: 1%; /* Margen superior similar a par */
+.section-title h2{
+  color:white;
+  font-size:2.2rem;
+  margin-bottom:15px;
 }
 
-.blog-logo {
-  text-align: center;
-  margin-top: 4%; /* Margen superior similar a conRow */
+.section-title p{
+  color:rgb(207,207,207);
+  max-width:800px;
+  margin:auto;
 }
 
-.blog-logo img {
-  max-width: 200px;
-  height: auto;
+.imageModal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+  cursor:pointer;
 }
 
-.blog-image {
-  max-width: 100%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
-  display: block;
-  margin-bottom: 1%; /* Margen inferior similar a fot */
+.modalImage{
+  max-width:95%;
+  max-height:95%;
+  border-radius:15px;
 }
 
-.wordpress-logo {
-  max-width: 50px; /* Ajusta el tamaño del logo de WordPress según tu preferencia */
-  display: block;
-  margin: 0 auto;
-}
+@media(max-width:768px){
 
-.blog-content a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 767px) {
-  .section-title {
-    margin-bottom: 6%; /* Margen inferior similar a contabt */
+  .swiper-slide{
+    flex-direction:column;
+    text-align:center;
   }
 
-  .row {
-    margin-top: 3%; /* Margen superior similar a conRow */
+  .visionImg{
+    width:280px;
   }
 
-  .blog-item {
-    background-color: #ffffff; /* Color de fondo similar a contabt */
-    padding: 2%; /* Relleno similar a contabt */
-    box-shadow: 5em; /* Sombra similar a contabt */
-    border-radius: 1em; /* Radio de borde similar a contabt */
+  .visionTitle{
+    font-size:24px;
   }
 
-  .blog-item img {
-    border-radius: 8px;
-  }
-
-  .blog-content h3 {
-    font-size: large; /* Tamaño de fuente similar a tit */
-    font-weight: bold; /* Peso de fuente similar a tit */
-    margin-top: 2%; /* Margen superior similar a tit */
-  }
-
-  .blog-content p {
-    font-size: small; /* Tamaño de fuente similar a par */
-    color: #555555; /* Color de texto similar a par */
-    margin-top: 1%; /* Margen superior similar a par */
-  }
-
-  .blog-logo {
-    text-align: center;
-    margin-top: 4%; /* Margen superior similar a conRow */
-  }
-
-  .blog-logo img {
-    max-width: 200px;
-    height: auto;
-  }
-
-  .blog-image {
-    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
-    display: block;
-    margin-bottom: 1%; /* Margen inferior similar a fot */
-  }
-
-  .wordpress-logo {
-    max-width: 50px; /* Ajusta el tamaño del logo de WordPress según tu preferencia */
-    display: block;
-    margin: 0 auto;
-  }
-
-  .blog-content a:hover {
-    text-decoration: underline;
-  }
-}
-
-@media (max-width: 415px) {
-  .section-title {
-    margin-bottom: 6%; /* Margen inferior similar a contabt */
-  }
-
-  .row {
-    margin-top: 3%; /* Margen superior similar a conRow */
-  }
-
-  .blog-item {
-    background-color: #ffffff; /* Color de fondo similar a contabt */
-    padding: 2%; /* Relleno similar a contabt */
-    box-shadow: 5em; /* Sombra similar a contabt */
-    border-radius: 1em; /* Radio de borde similar a contabt */
-  }
-
-  .blog-item img {
-    border-radius: 8px;
-  }
-
-  .blog-content h3 {
-    font-size: large; /* Tamaño de fuente similar a tit */
-    font-weight: bold; /* Peso de fuente similar a tit */
-    margin-top: 2%; /* Margen superior similar a tit */
-  }
-
-  .blog-content p {
-    font-size: small; /* Tamaño de fuente similar a par */
-    color: #555555; /* Color de texto similar a par */
-    margin-top: 1%; /* Margen superior similar a par */
-  }
-
-  .blog-logo {
-    text-align: center;
-    margin-top: 4%; /* Margen superior similar a conRow */
-  }
-
-  .blog-logo img {
-    max-width: 200px;
-    height: auto;
-  }
-
-  .blog-image {
-    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
-    display: block;
-    margin-bottom: 1%; /* Margen inferior similar a fot */
-  }
-
-  .wordpress-logo {
-    max-width: 50px; /* Ajusta el tamaño del logo de WordPress según tu preferencia */
-    display: block;
-    margin: 0 auto;
-  }
-
-  .blog-content a:hover {
-    text-decoration: underline;
-  }
-}
-
-@media (max-width: 320px), (orientation: portrait) {
-  .section-title {
-    margin-bottom: 6%; /* Margen inferior similar a contabt */
-  }
-
-  .row {
-    margin-top: 3%; /* Margen superior similar a conRow */
-  }
-
-  .blog-item {
-    background-color: #ffffff; /* Color de fondo similar a contabt */
-    padding: 2%; /* Relleno similar a contabt */
-    box-shadow: 5em; /* Sombra similar a contabt */
-    border-radius: 1em; /* Radio de borde similar a contabt */
-  }
-
-  .blog-item img {
-    border-radius: 8px;
-  }
-
-  .blog-content h3 {
-    font-size: large; /* Tamaño de fuente similar a tit */
-    font-weight: bold; /* Peso de fuente similar a tit */
-    margin-top: 2%; /* Margen superior similar a tit */
-  }
-
-  .blog-content p {
-    font-size: small; /* Tamaño de fuente similar a par */
-    color: #555555; /* Color de texto similar a par */
-    margin-top: 1%; /* Margen superior similar a par */
-  }
-
-  .blog-logo {
-    text-align: center;
-    margin-top: 4%; /* Margen superior similar a conRow */
-  }
-
-  .blog-logo img {
-    max-width: 200px;
-    height: auto;
-  }
-
-  .blog-image {
-    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
-    display: block;
-    margin-bottom: 1%; /* Margen inferior similar a fot */
-  }
-
-  .wordpress-logo {
-    max-width: 50px; /* Ajusta el tamaño del logo de WordPress según tu preferencia */
-    display: block;
-    margin: 0 auto;
-  }
-
-  .blog-content a:hover {
-    text-decoration: underline;
-  }
 }
