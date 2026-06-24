@@ -16,7 +16,7 @@ export const Icons = () => {
   return (
     <div className="contTec">
         {icons.map((e) =>
-            <spam><img className="iconTec" src={e} alt={e}/></spam>
+            <span><img className="iconTec" src={e} alt={e}/></span>
         )}
     </div>
   )
